@@ -38,6 +38,25 @@ describe('verifyOverAgeTokenCredential', () => {
     result.overAge.should.equal(21);
   });
 
+  it('should fail with bad context', async () => {
+    // parse from QR code text, change context
+    const {jsonldDocument} = await fromQrCodeText({
+      expectedHeader: 'VP1-',
+      text: qrCodeExample,
+      documentLoader,
+      diagnose: null
+    });
+
+    // set invalid context value
+    const credential = jsonldDocument.verifiableCredential;
+    credential['@context'] = ['https://invalid.example'];
+
+    const result = await verifyOverAgeTokenCredential({credential});
+
+    expect(result?.verified).to.equal(false);
+    expect(result?.error?.message).to.include('Credential "@context" must be');
+  });
+
   it('should fail with changed data', async () => {
     // parse from QR code text, change signature
     const {jsonldDocument} = await fromQrCodeText({
