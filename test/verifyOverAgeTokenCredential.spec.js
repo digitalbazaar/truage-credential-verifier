@@ -1,9 +1,9 @@
 /*!
  * Copyright (c) 2024 Digital Bazaar, Inc. All rights reserved.
  */
-import {fromQrCodeText, toQrCodeText} from '../lib/qrcode.js';
 import {documentLoader} from '../lib/documentLoader.js';
 import {expect} from 'chai';
+import {fromQrCodeText} from '../lib/qrcode.js';
 import {qrCodeExample} from './mock-data.js';
 import {verifyOverAgeTokenCredential} from '../lib/index.js';
 
