@@ -1,50 +1,5 @@
 /*!
- * Copyright (c) 2022 Digital Bazaar, Inc. All rights reserved.
+ * Copyright (c) 2024 Digital Bazaar, Inc. All rights reserved.
  */
-export const controller = 'https://example.edu/issuers/565049';
-
-export const mockPublicEd25519Multikey = {
-  '@context': 'https://w3id.org/security/multikey/v1',
-  type: 'Multikey',
-  controller,
-  id: controller + '#z6MkwXG2WjeQnNxSoynSGYU8V9j3QzP3JSqhdmkHc6SaVWoT',
-  publicKeyMultibase: 'z6MkwXG2WjeQnNxSoynSGYU8V9j3QzP3JSqhdmkHc6SaVWoT'
-};
-
-export const ed25519MultikeyKeyPair = {
-  '@context': 'https://w3id.org/security/multikey/v1',
-  type: 'Multikey',
-  controller,
-  id: controller + '#z6MkwXG2WjeQnNxSoynSGYU8V9j3QzP3JSqhdmkHc6SaVWoT',
-  publicKeyMultibase: 'z6MkwXG2WjeQnNxSoynSGYU8V9j3QzP3JSqhdmkHc6SaVWoT',
-  secretKeyMultibase: 'zrv3rbPamVDGvrm7LkYPLWYJ35P9audujKKsWn3x29EUiGwwhdZQd' +
-    '1iHhrsmZidtVALBQmhX3j9E5Fvx6Kr29DPt6LH'
-};
-
-export const controllerDocEd25519Multikey = {
-  '@context': [
-    'https://www.w3.org/ns/did/v1',
-    'https://w3id.org/security/multikey/v1'
-  ],
-  id: 'https://example.edu/issuers/565049',
-  assertionMethod: [mockPublicEd25519Multikey]
-};
-
-export const credential = {
-  '@context': [
-    'https://www.w3.org/2018/credentials/v1',
-    {
-      AlumniCredential: 'https://schema.org#AlumniCredential',
-      alumniOf: 'https://schema.org#alumniOf'
-    },
-    'https://w3id.org/security/data-integrity/v1'
-  ],
-  id: 'http://example.edu/credentials/1872',
-  type: ['VerifiableCredential', 'AlumniCredential'],
-  issuer: 'https://example.edu/issuers/565049',
-  issuanceDate: '2010-01-01T19:23:24Z',
-  credentialSubject: {
-    id: 'https://example.edu/students/alice',
-    alumniOf: 'Example University'
-  }
-};
+// eslint-disable-next-line max-len
+export const qrCodeExample = 'VP1-B3ECQDIYACEMHIGDODB6KQAMDCELBIGDQQIBVAADIXHBIQX2PFCEVATORHCCS2LYYOKSRQ5AYSYMLMGTEEHEVWGF6DDCBRQCYIF5DCQDI3YNUWHN53SMBYY75SQPJQUBD73YL5OH3DDLALMINCE55XRFBEUS2SCJY52BAXJE3TKYA6I6SSVHDX4CF4LWYVZFDXPMQ536WBAMMFAYZAQAVQIXNAFIOG5RWAVVT5UYU32LAGAUXMSXZUJL3GLMGCMPGWKFOWUNW44G66WBC5UAVBY3WGYCWWPWTCTPJMAYCS5SK7GRFPMZNQYJR42ZIV22RW3TQ33YYOWBBQ3AYQIMJ5IQYRJMFO6WZAUA2IAAVDBVBQZAYNRFHVWIFAGRAAFQYPQKRQ3SYHN5AAAKG3JGL6G7AC3LL7YEC7KLUV7BHOTPEOYX6P53HWMLQH42P4XYY6YY3U53CG7OG7XUBKMZU6B7DTQ2GNJKDME26GUGADCKBKGFCDJSV4LGSDCSBUZBBZFNRRKECDECACWBC5UAVBY3WGYCWWPWTCTPJMAYCS5SK7GRFPMZNQYJR42ZIV22RW3TQ33Y';
