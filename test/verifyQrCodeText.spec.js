@@ -19,9 +19,13 @@ describe('verifyQrCodeText', () => {
 
     expect(error).to.not.exist;
     expect(result).to.exist;
-    // FIXME:
-    //const expectedResult =
-    //result.should.equal(expectedResult);
+    expect(result?.verified).to.equal(true);
+    result.should.have.keys([
+      'verified', 'credential', 'issuer', 'overAge', 'verificationDetails'
+    ]);
+    result.issuer.should.equal(
+      'did:key:z6Mkju1q59X5KZ3pNLF6FeXCntgmfbGeYjd6LmCYyZdHSAQE');
+    result.overAge.should.equal(21);
   });
 
   it('should fail with changed data', async () => {
@@ -48,8 +52,8 @@ describe('verifyQrCodeText', () => {
     const result = await verifyQrCodeText({qrCodeText});
 
     expect(result?.verified).to.equal(false);
-    // FIXME:
-    //expect(result?.error).to.exist();
-    //result.error.message.should.equal('FIXME');
+    expect(result?.error?.message).to.include('Verification error');
+    expect(result?.error?.errors).to.exist;
+    expect(result?.error?.errors[0].message).to.equal('Invalid signature.');
   });
 });
