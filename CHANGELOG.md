@@ -1,6 +1,6 @@
-# @digitalbazaar/eddsa-2022-cryptosuite Changelog
+# @digitalbazaar/truage-credential-verifier Changelog
 
-## 1.0.0 - 2022-09-08
+## 1.0.0 - 2024-mm-dd
 
 ### Added
 - Initial version.
