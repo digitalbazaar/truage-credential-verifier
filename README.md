@@ -55,6 +55,19 @@ const qrCodeText = 'VP1-B3ECQDIYACEMHIGDODB6KQAMDCELBIGDQQIBVAADIXHBIQX2PFCEVATO
 const result = await verifyQrCodeText({qrCodeText});
 
 console.log('result', result);
+
+// result is an object with these properties:
+// verified: boolean
+//   true - The VC was parsed and the signature passed
+//   false - Something failed, see 'error' field for more details
+// error: object, only present if verification failed
+//   message - A description of the error
+//   errors - An optional array of additional error objects
+// credential: object, the VC that was parsed and verified, if verified is true
+// issuer: string, the ID of the issuer that MUST be checked against the allow
+//   list from TruAge before using the VC
+// overAge: integer, the parsed over age value, e.g., 21
+// verificationDetails: object, developer verification debugging details
 ```
 
 ## Contribute
