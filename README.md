@@ -58,7 +58,7 @@ console.log('result', result);
 
 // result is an object with these properties:
 // verified: boolean
-//   true - The VC was parsed and the signature passed
+//   true - The VC was parsed and the signature passed, but check `issuer`!
 //   false - Something failed, see 'error' field for more details
 // error: object, only present if verification failed
 //   message - A description of the error
