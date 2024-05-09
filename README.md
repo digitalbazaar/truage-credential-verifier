@@ -1,7 +1,7 @@
 # TruAge Credential Verifier _(@digitalbazaar/truage-credential-verifier)_
 
-[![Build status](https://img.shields.io/github/workflow/status/digitalbazaar/truage-credential-verifier/Node.js%20CI)](https://github.com/digitalbazaar/truage-credential-verifier/actions?query=workflow%3A%22Node.js+CI%22)
-[![Coverage status](https://img.shields.io/codecov/c/github/digitalbazaar/truage-credential-verifier)](https://codecov.io/gh/digitalbazaar/truage-credential-verifier)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/digitalbazaar/truage-credential-verifier/main.yml)](https://github.com/digitalbazaar/truage-credential-verifier/actions/workflows/main.yml)
+[![Coverage Status](https://img.shields.io/codecov/c/github/digitalbazaar/truage-credential-verifier)](https://codecov.io/gh/digitalbazaar/truage-credential-verifier)
 [![NPM Version](https://img.shields.io/npm/v/@digitalbazaar/truage-credential-verifier.svg)](https://npm.im/@digitalbazaar/truage-credential-verifier)
 
 > TruAge Verifiable Credential Verifier.
