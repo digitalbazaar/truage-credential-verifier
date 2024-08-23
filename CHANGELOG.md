@@ -1,6 +1,6 @@
 # @digitalbazaar/truage-credential-verifier Changelog
 
-## 1.1.0 - 2024-08-dd
+## 1.1.0 - 2024-08-23
 
 ### Changed
 - Updated dependencies.
