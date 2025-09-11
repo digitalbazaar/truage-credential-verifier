@@ -1,6 +1,6 @@
 # @digitalbazaar/truage-credential-verifier Changelog
 
-## 1.2.0 - 2025-mm-dd
+## 1.2.0 - 2025-09-11
 
 ### Changed
 - Use `@digitalbazaar/cborld@8`.
